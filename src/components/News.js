@@ -42,15 +42,7 @@ const News = (props)=>{
 
  
 
-    // const handlePrevClick = async () => {
-    //     setPage(page-1)
-    //     updateNews();
-    // }
-
-    // const handleNextClick = async () => { 
-    //     setPage(page+1)
-    //     updateNews()
-    // }
+    
 
     const fetchMoreData = async () => {   
         const url = `https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=${props.apiKey}&page=${page+1}&pageSize=${props.pageSize}`;
